@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="stylesheet" href="CSS/button.css">
-    
-    <script src="javascript/climaconsumodeAPI/JStempo.js" defer></script>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/button.css">
+        
+        <script src="javascript/climaconsumodeAPI/clima.js" defer></script>
+        <script src="javascript/CEP_API/CEP.js" defer></script>
 
-    <title>Consulta de Clima</title>
-</head>
-<body class="bg-light">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <div class="container mt-5">
+        <title>Consulta de Clima</title>
+    </head>
+    <body class="bg-light">
 
-        <div class="row justify-content-center">
+        <div class="container mt-5">
 
-            <div class="col-md-6">
+            <div class="row justify-content-center">
 
-                <div class="card shadow">
+                <div class="col-md-6">
 
-                    <div class="card-header text-center">
-                        <h3>Consulta de Clima</h3>
-                    </div>
+                    <div class="card shadow">
 
-                    <div class="card-body text-center">
+                        <div class="card-header text-center">
+                            <h3>Consulta de Clima</h3>
+                        </div>
 
-                        <button id="obterClima" class="btn-clima">
-                            Clima
-                        </button>
+                        <div class="card-body text-center">
 
-                        <p id="exibirclima" class="mt-4 fs-4"></p>
-                        
+                            <button id="obterClima" class="btn-clima">
+                                Clima
+                            </button>
 
-                    </div>
+                            <p id="exibirclima" class="mt-4 fs-4"></p>
+                            
+
+                        </div>
 
 
-                    <div class="card-header text-center">
-                        <h3>Consulta de Endereço</h3>
-                    </div>
+                        <div class="card-header text-center">
+                            <h3>Consulta de Endereço</h3>
+                        </div>
 
-                    <div class="card-body text-center">
+                        <div class="card-body text-center">
 
-                        <button id="obterEndereco" class="btn-clima">
-                            CEP
-                        </button>
+                            <button id="obterEndereco" class="btn-clima">
+                                CEP
+                            </button>
 
-                        <p id="exibirendereco" class="mt-4 fs-4"></p>
-                        
+                            <p id="exibirendereco" class="mt-4 fs-4"></p>
+                            
+
+                        </div>
 
                     </div>
 
@@ -60,8 +64,6 @@
 
         </div>
 
-    </div>
 
-
-</body>
+    </body>
 </html>
