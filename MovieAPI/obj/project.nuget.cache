@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RC+M0DlkfU8=",
+  "dgSpecHash": "PlFI5g6D+hY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\AmbienteWEB\\MovieAPI\\MovieAPI.csproj",
+  "projectFilePath": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\FilmSystem\\MovieAPI\\MovieAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.9\\microsoft.aspnetcore.openapi.10.0.9.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
@@ -11,10 +11,10 @@
     {
       "code": "NU1903",
       "level": "Warning",
-      "message": "O pacote 'Microsoft.OpenApi' 2.0.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\AmbienteWEB\\MovieAPI\\MovieAPI.csproj",
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "projectPath": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\FilmSystem\\MovieAPI\\MovieAPI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\AmbienteWEB\\MovieAPI\\MovieAPI.csproj",
+      "filePath": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\FilmSystem\\MovieAPI\\MovieAPI.csproj",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
         "net10.0"

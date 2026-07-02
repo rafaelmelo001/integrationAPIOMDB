@@ -89,11 +89,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\AmbienteWEB\\MovieAPI\\MovieAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\FilmSystem\\MovieAPI\\MovieAPI.csproj",
       "projectName": "MovieAPI",
-      "projectPath": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\AmbienteWEB\\MovieAPI\\MovieAPI.csproj",
+      "projectPath": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\FilmSystem\\MovieAPI\\MovieAPI.csproj",
       "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\AmbienteWEB\\MovieAPI\\obj\\",
+      "outputPath": "C:\\Users\\Rafael\\Documents\\FACULDADE ANALISE DESENVOLVIMENTO DE SISTEMAS\\FilmSystem\\MovieAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -582,7 +582,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'Microsoft.OpenApi' 2.0.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
         "net10.0"
