@@ -5,7 +5,7 @@ using MovieAPI.Service;
 namespace MovieAPI.Controller
 {
     [ApiController]//essa classe é um controller de API
-    [Route("api/[controller]")]
+    [Route("api/[Controller]")]
     public class FilmesController : ControllerBase
     {
         private readonly FilmesService _filmesService;
