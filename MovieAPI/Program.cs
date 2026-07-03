@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();//vai mapear controllers automaticamente - PASSO 1
 
+//Criei politica de CORS permitindo a o frontend que roda em outra porta '5500' chamar a API.
 builder.Services.AddCors(option =>
 {
     option.AddPolicy("Frontend", policy =>
@@ -15,8 +16,8 @@ builder.Services.AddCors(option =>
 });
 
 //=== registros ====
-builder.Services.AddHttpClient();
-builder.Services.AddScoped<FilmesService>();//registrei que existe uma FilmesServices
+builder.Services.AddHttpClient();//reigtro do method request in HTTP
+builder.Services.AddScoped<FilmesService>();//registrei que existe uma FilmesService
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
@@ -29,7 +30,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors("Frontend");
+app.UseCors("Frontend");//deve ser criado junto da politica de CORS
 
 app.UseAuthorization();
 
