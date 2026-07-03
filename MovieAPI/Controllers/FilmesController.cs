@@ -9,12 +9,12 @@ namespace MovieAPI.Controller
     public class FilmesController : ControllerBase
     {
         private readonly FilmesService _filmesService;
-        public FilmesController(FilmesService filmesService)
+        public FilmesController(FilmesService filmesService)//construtor
         {
             _filmesService = filmesService;//gravar a refenrencia da service
         }
         [HttpGet]
-        public async Task<IActionResult> GetFilme([FromQuery]string nome)//metodo
+        public async Task<IActionResult> GetFilme([FromQuery]string nome)//quem chama o metodo
         {
             var resultado = await _filmesService.BuscarFilme(nome);
 
