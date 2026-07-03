@@ -2,7 +2,7 @@
 export async function getFilm(nomeFilme)
 {
 
-    //const urlAcess = `${urlFilm}?apikey=${API_KEY}&t=${nomeFilme}`;
+    
 
     const response = await fetch(`http://localhost:5167/api/Filmes?nome=${nomeFilme}`);
 
