@@ -2,7 +2,7 @@
 export async function getFilm(nomeFilme)
 {
 
-    const response = await fetch(`http://localhost:5167/api/Filmes?nome=${nomeFilme}`);
+    const response = await fetch(`http://localhost:3000/api/Filmes?nome=${nomeFilme}`);
 
     if(!response.ok)
     {

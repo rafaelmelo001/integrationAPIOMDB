@@ -16,7 +16,7 @@ builder.Services.AddCors(option =>
 });
 
 //=== registros ====
-builder.Services.AddHttpClient();//reigtro do method request in HTTP
+builder.Services.AddHttpClient();//registro do method request in HTTP
 builder.Services.AddScoped<FilmesService>();//registrei que existe uma FilmesService, quando alguem pedir
 builder.Services.AddOpenApi();              //ela entrega para o construtor
 
