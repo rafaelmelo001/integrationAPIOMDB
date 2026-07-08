@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisar Filme</title>
+
+    <title>Movie Search</title>
 
     <link rel="stylesheet" href="./CSS/styleFilms.css">
 
-    <script type="module" src="./JS/controller/filmController.js" defer></script>
+    <script 
+        type="module" 
+        src="./JS/controller/filmController.js" 
+        defer>
+    </script>
+
 </head>
+
 <body>
 
-    <div class="container">
+    <main class="container">
 
-        <h1>Pesquisar Filme</h1>
+        <h1>🎬 Pesquisar Filme</h1>
 
-        <input
-            type="text"
-            id="filme"
-            placeholder="Digite o nome do filme"
-        >
+        <div class="search-box">
 
-        <button id="getFilm">
-            Buscar
-        </button>
+            <input 
+                type="text"
+                id="filme"
+                placeholder="Digite o nome do filme"
+            >
 
-        <hr>
-        <p id="showContent"></p>
+            <button id="getFilm">
+                Buscar
+            </button>
 
-    </div>
+        </div>
+
+
+        <section id="showContent" class="movie-card">
+
+        </section>
+
+    </main>
 
 </body>
 </html>
