@@ -11,7 +11,10 @@ builder.Services.AddCors(option =>
 {
     option.AddPolicy("Frontend", policy =>
     {
-        policy.WithOrigins("http://127.0.0.1:5500","http://localhost:5500","https://integration-apiomdb-noho73jb4-rafael-melos-projects-32ef364c.vercel.app").AllowAnyHeader().AllowAnyMethod();
+        policy.WithOrigins("http://127.0.0.1:5500",
+                            "http://localhost:5500",
+                            "https://integration-apiomdb-noho73jb4-rafael-melos-projects-32ef364c.vercel.app",
+                            "integration-apiomdb-git-main-rafael-melos-projects-32ef364c.vercel.app").AllowAnyHeader().AllowAnyMethod();
     });
 });
 
