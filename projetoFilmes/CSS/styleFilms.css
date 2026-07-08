@@ -80,10 +80,21 @@ h1 {
     transition: .1s;
 }
 
+/* Mensagens */
+
+.message{
+    min-height: 24px;
+    margin-bottom: 20px;
+
+    color: #dc2626;
+    font-weight: bold;
+}
+
 /* Card do filme */
 
 .movie-card {
-    display: flex;
+    display: none; /* Escondido inicialmente */
+
     gap: 30px;
     background: rgb(160, 212, 247);
     border-radius: 18px;
@@ -91,6 +102,10 @@ h1 {
     box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
 
     min-height: 320px;
+}
+
+.movie-card.show {
+    display: flex;
 }
 
 .movie-card img {
