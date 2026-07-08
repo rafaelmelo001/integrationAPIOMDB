@@ -14,8 +14,9 @@ builder.Services.AddCors(option =>
         policy.WithOrigins("http://127.0.0.1:5500",
                             "http://localhost:5500",
                             "https://integration-apiomdb-noho73jb4-rafael-melos-projects-32ef364c.vercel.app",
-                            "integration-apiomdb-git-main-rafael-melos-projects-32ef364c.vercel.app").AllowAnyHeader().AllowAnyMethod();
-    });
+                            "https://integration-apiomdb-git-main-rafael-melos-projects-32ef364c.vercel.app",
+                            "https://integration-apiomdb.vercel.app").AllowAnyHeader().AllowAnyMethod();
+    });                     
 });
 
 //=== registros ====
