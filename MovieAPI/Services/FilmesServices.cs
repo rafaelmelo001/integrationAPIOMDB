@@ -1,3 +1,6 @@
+using MovieAPI.Model;
+using MovieAPI.DTO;
+
 namespace MovieAPI.Service
 {
     public class FilmesService
@@ -10,23 +13,30 @@ namespace MovieAPI.Service
             _apikey = Environment.GetEnvironmentVariable("OMDB_APIKEY")
                         ?? throw new Exception("OMDB_APIKEY não configurada");
         }
-        public async Task<string> BuscarFilme(string nomeFilme)//metodo
+        public async Task<MovieDTO> BuscarFilme(string nomeFilme)//metodo
         {
 
             var urlBase = "http://www.omdbapi.com/";
             var url = $"{urlBase}?apikey={_apikey}&t={nomeFilme}";
 
-            var response = await _httpClient.GetAsync(url);//recebo o objeto que a API retornou
+            var response = await _httpClient.GetAsync(url)//recebo o objeto que a API retornou
+                ?? throw new InvalidOperationException("Não foi possível ler objeto retornado");
 
-            if(!response.IsSuccessStatusCode)//validação
+            var dados  = await response.Content.ReadFromJsonAsync<Movie>()//ler o conteudo
+                ?? throw new InvalidOperationException("Não foi possível converter o conteúdo");
+
+
+            return new MovieDTO
             {
-                return "Erro ao buscar filme, verifique o console";
-            }
-
-            var dados  = await response.Content.ReadAsStringAsync();//ler o conteudo
-
-
-            return dados;
+                Title = dados.Title,
+                Year = dados.Year,
+                Director = dados.Director,
+                Genre = dados.Genre,
+                Runtime = dados.Runtime,
+                ImdbRating = dados.ImdbRating,
+                Plot = dados.Plot,
+                Poster = dados.Poster 
+            };
         }
     }
 }
