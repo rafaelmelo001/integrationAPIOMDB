@@ -23,17 +23,17 @@ document.getElementById("getFilm").addEventListener("click", async function (){
     const dados = await getFilm(nomeFilme);
 
     display.innerHTML = `
-        <img src="${dados.Poster}" alt="${dados.Title}">
+        <img src="${dados.poster}" alt="${dados.title}">
 
         <div class="movie-info">
-            <h2>${dados.Title}</h2>
+            <h2>${dados.title}</h2>
 
-            <p><strong>Ano:</strong> ${dados.Year}</p>
-            <p><strong>Diretor:</strong> ${dados.Director}</p>
-            <p><strong>Gênero:</strong> ${dados.Genre}</p>
-            <p><strong>Duração:</strong> ${dados.Runtime}</p>
+            <p><strong>Ano:</strong> ${dados.year}</p>
+            <p><strong>Diretor:</strong> ${dados.director}</p>
+            <p><strong>Gênero:</strong> ${dados.genre}</p>
+            <p><strong>Duração:</strong> ${dados.runtime}</p>
             <p><strong>IMDb:</strong> ⭐ ${dados.imdbRating}</p>
-            <p>${dados.Plot}</p>
+            <p>${dados.plot}</p>
         </div>
     `;
 
