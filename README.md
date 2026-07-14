@@ -6,6 +6,10 @@
 
 ## 📖 Sobre o projeto
 
+
+Sugiro que utilize nomes em inglês para pesquisar os filmes.
+
+
 O **Integration API OMDb** foi desenvolvido com o objetivo de praticar conceitos de desenvolvimento Web utilizando **ASP.NET Core**, consumo de APIs REST, arquitetura em camadas e deploy em nuvem.
 
 A aplicação é composta por:
