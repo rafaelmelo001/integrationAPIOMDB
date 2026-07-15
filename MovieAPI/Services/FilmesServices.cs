@@ -5,12 +5,12 @@ namespace MovieAPI.Service
 {
     public class FilmesService
     {
-        private readonly HttpClient _httpClient;//variável que guarda o objeto HTTP
+        private readonly HttpClient _httpClient;//(campo privado da classe)variável que guarda o objeto HTTP
         private readonly string _apikey;
-        public FilmesService(HttpClient httpClient)//construtor recebe o objeto e guarda no _httpClient 
-        {                                          // e inicializa o objeto cada vez que for criado
-            _httpClient = httpClient;
-            _apikey = Environment.GetEnvironmentVariable("OMDB_APIKEY")
+        public FilmesService(HttpClient httpClient)//construtor da classe
+        {                                          // pra criar um FilmesService precisa de um HttpClient
+            _httpClient = httpClient; //copia a referencia para o campo privado da classe.
+            _apikey = Environment.GetEnvironmentVariable("OMDB_APIKEY")         //EnvironmentVariable
                         ?? throw new Exception("OMDB_APIKEY não configurada");
         }
         public async Task<MovieDTO> BuscarFilme(string nomeFilme)//metodo

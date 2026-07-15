@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Movie Search</title>
+        <title>Movie Search</title>
 
-    <link rel="stylesheet" href="./CSS/styleFilms.css">
+        <link rel="stylesheet" href="./CSS/styleFilms.css">
 
-    <script 
-        type="module" 
-        src="./JS/controller/filmController.js" 
-        defer>
-    </script>
+        <script 
+            type="module" 
+            src="./JS/controller/filmController.js" 
+            defer>
+        </script>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <main class="container">
+        <main class="container">
 
-        <h1>🎬 Pesquisar Filme</h1>
+            <h1>🎬 Pesquisar Filme</h1>
 
-        <div class="search-box">
+            <div class="search-box">
 
-            <input 
-                type="text"
-                id="filme"
-                placeholder="Digite o nome do filme"
-            >
+                <input 
+                    type="text"
+                    id="filme"
+                    placeholder="Digite o nome do filme"
+                >
 
-            <button id="getFilm">
-                Buscar
-            </button>
+                <button id="getFilm">
+                    Buscar
+                </button>
 
-        </div>
+            </div>
 
-        <p id="message" class="message"></p>
+            <p id="message" class="message"></p>
 
-        <section id="showContent" class="movie-card">
+            <div id="loading" class="loading">
 
-        </section>
+                <svg viewBox="25 25 50 50">
+                    <circle r="20" cy="50" cx="50"></circle>
+                </svg>
+        
+            </div>
 
-    </main>
+            <section id="showContent" class="movie-card">
 
-</body>
+            </section>
+
+        </main>
+
+    </body>
 </html>
